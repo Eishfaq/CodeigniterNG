@@ -1,0 +1,24 @@
+<p ng-show="$parent.success" class="alert alert-success">{{$parent.success}}</p>
+
+<div class="required-feild-block">
+	<input type="text" placeholder="Name" ng-model="profiles.name" class="form-control">
+	<div class="required-icon">
+		<div class="text">*</div>
+	</div>
+</div>
+
+<div class="required-feild-block">
+	<input type="text" placeholder="Designation" ng-model="profiles.designation" class="form-control">
+	<div class="required-icon">
+		<div class="text">*</div>
+	</div>
+</div>
+
+<div class="required-feild-block">
+	<input type="text" placeholder="Company" ng-model="profiles.company" class="form-control">
+	<div class="required-icon">
+		<div class="text">*</div>
+	</div>
+</div>
+
+<button class="btn btn-primary" ng-click="submit($parent.profiles)">Save</button>

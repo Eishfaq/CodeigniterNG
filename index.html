@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>REST API</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./Scripts/vendor/bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="./Scripts/vendor/angular/angular.js"></script>
+	<script type="text/javascript" src="./Scripts/vendor/angular/angular-route.js"></script>
+	<script type="text/javascript" src="./Scripts/vendor/angular/angular-resource.js"></script>
+	<script type="text/javascript" src="./Scripts/app/app.js"></script>
+</head>
+<body>
+	<div ng-include="'templates/nav.html'"></div>
+
+	<div class="container">
+		<div style="margin-top: 80px;" ng-view></div>
+	</div>
+</body>
+</html>

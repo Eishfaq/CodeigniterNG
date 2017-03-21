@@ -1,0 +1,15 @@
+
+<div class="row">
+	<div class="panel-body">
+		<ul class="list-group">
+			<p ng-show="$parent.success" class="alert alert-danger">{{$parent.success}}</p>
+			<li class="list-group-item" ng-repeat="profile in profiles">
+				<a href="#/edit/{{profile.id}}">{{profile.name}}</a>
+				<div class="pull-right action-buttons">
+					<a href="#/edit/{{profile.id}}"><span class="glyphicon glyphicon-pencil"></span></a>
+					<a ng-click="remove(profile.id)"><span class="glyphicon glyphicon-trash"></span></a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

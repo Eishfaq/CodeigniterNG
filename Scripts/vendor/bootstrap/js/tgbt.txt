@@ -1,0 +1,18 @@
+(function () {
+    var app = angular.module('StudentListManage', ['StudentService']);
+
+    app.controller('StudentListCtrl', StudentListCtrl);
+
+    StudentListCtrl.$inject = ['StudentResource', 'Students'];
+
+    function StudentListCtrl(StudentResource, Student) {
+        var vm = this;
+        vm.Student = [];
+
+        vm.Student = Student;
+
+        console.log(vm.Student);
+
+
+    }
+})();
